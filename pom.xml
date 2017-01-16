@@ -12,14 +12,14 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<apache.httpclient.version>4.10</apache.httpclient.version>
-<org.springframework.version>4.2.4.RELEASE</org.springframework.version>
+		<junit.version>4.10</junit.version>
+		<org.springframework.version>4.2.4.RELEASE</org.springframework.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>${apache.httpclient.version}</version>
+			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
