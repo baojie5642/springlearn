@@ -7,7 +7,8 @@ import org.springframework.stereotype.Service;
 public class GetBeanFromSpring implements InitializingBean{
 	@Autowired
 	private SpringTest springTest;
-	
+	@Autowired
+	private SecondTest secondTest;
 	public GetBeanFromSpring(){
 		
 	}
@@ -18,6 +19,14 @@ public class GetBeanFromSpring implements InitializingBean{
 
 	public void setSpringTest(SpringTest springTest) {
 		this.springTest = springTest;
+	}
+
+	public SecondTest getSecondTest() {
+		return secondTest;
+	}
+
+	public void setSecondTest(SecondTest secondTest) {
+		this.secondTest = secondTest;
 	}
 
 	@Override

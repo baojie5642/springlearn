@@ -6,10 +6,19 @@
     	http://www.springframework.org/schema/context 
     	http://www.springframework.org/schema/context/spring-context-4.2.xsd"
 	default-autowire="byName" default-lazy-init="false">
-	<context:property-placeholder location="classpath:config/springtest.properties" />
+	<context:property-placeholder location="classpath:config/*.properties" />
+	
 	<bean id="SpringTest" class="com.baojie.springlearn.SpringTest">
 		<property name="num" value="${springtest.num}" />
 		<property name="name" value="${springtest.name}" />
 	</bean>
+	
+	<bean id="SecondTest" class="com.baojie.springlearn.SecondTest">
+		<property name="haoMa" value="${second.num}" />
+		<property name="mingCheng" value="${second.name}" />
+	</bean>
+	
+	
+	
 	<context:component-scan base-package="com.baojie.springlearn" />
 </beans>
